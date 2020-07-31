@@ -5,7 +5,7 @@ I'm also work as freelancer, If you are facing problem in business or wanted to 
 
 
 ## Experience
--**WiseKreator**[Jul2020-Current]
+- **WiseKreator**[Jul2020-Current]
   Working on Social Media site. Which using React.JS, Django, AWS Services 
   [See Work](https://www.wisekreator.com/)
   
