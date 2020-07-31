@@ -30,8 +30,9 @@ I'm also work as freelancer, If you are facing problem in business or wanted to 
     - Django  
 
 3. **PlacementCell Portal**  
-   Developed a portal for placement cell of FCRIT, Vashi, the aim is to provide the help to automate placement activities. Using this placement coordinator can manage companies and automatically gets eligible students. Also the coordinator will get to know which student is lagging in which phase of the placement process so they can guide them.   
-   [See Work](http://sp.fcrit.ac.in/placementcell)  
+   Developed a portal for placement cell of FCRIT, Vashi, the aim is to provide the help to automate placement activities. Using this placement coordinator can manage companies and automatically gets eligible students. Also the coordinator will get to know which student is lagging in which phase of the placement process so they can guide them.      
+   [See Work](http://sp.fcrit.ac.in/placementcell)      
+   
     
 4. **iMails**  
    Developed a website for mail service through which users can easily communicate with each other.  
