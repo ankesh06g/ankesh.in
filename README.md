@@ -3,7 +3,7 @@
 I'm Ankesh Gaikwad. Professionally I'm a **Computer Engineer** in **India**. I'm always looking for problems which push my limits. Through my journey of technology, I learned many technologies,you can find list of that in services section.I have worked on different programming languageslike C, C++, VB, Java, PHP etc.But the laguage which facinates me alot, is python.   
 I'm also work as freelancer, If you are facing problem in business or wanted to digitize your business, you can contact(**contact@ankesh.in**) me. I would be happy to help you.  
 
-### You can read my Blog's [HERE](blog.ankesh.in)
+### You can read my Blog's [HERE](http://blog.ankesh.in)
 
 ## Experience
 - **WiseKreator** [ Jul2020-Current ]  
