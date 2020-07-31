@@ -54,9 +54,9 @@ University - **Mumbai University, India**
 
 
 ## Follow Me On
-[GitHub](https://github.com/ankesh06g)
-[LinkedIn](https://www.linkedin.com/in/aag06)
-[Twitter](https://www.twitter.com/Ankesh_AAG?s=01)
-[Facebook](https://www.facebook.com/ankesh.gaikwad06)
-[Instagram](https://www.instagram.com/ankesh_gaikwad06)
+- [GitHub](https://github.com/ankesh06g)
+- [LinkedIn](https://www.linkedin.com/in/aag06)
+- [Twitter](https://www.twitter.com/Ankesh_AAG?s=01)
+- [Facebook](https://www.facebook.com/ankesh.gaikwad06)
+- [Instagram](https://www.instagram.com/ankesh_gaikwad06)
 
