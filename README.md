@@ -5,21 +5,21 @@ I'm also work as freelancer, If you are facing problem in business or wanted to 
 
 
 ## Experience
-- **WiseKreator**[Jul2020-Current]  
-  Working on Social Media site. Which using React.JS, Django, AWS Services 
+- **WiseKreator** [ Jul2020-Current ]  
+  Working on Social Media site. Which using React.JS, Django, AWS Services.   
   [See Work](https://www.wisekreator.com/)
   
-- **Autodice**[Jun2019-Jul2019]  
+- **Autodice** [ Jun2019-Jul2019 ]  
   In this Internship I worked on '**Book Selling Android App**' called '**Edition**' in Java.
   
-- **ScrapeNext Technologies**[Mar2019-Jun2019]  
+- **ScrapeNext Technologies** [ Mar2019-Jun2019 ]    
   Successfully completed an Internship in the role of **Full Stack Developer**. Worked on various ongoing projects in python, web development and AWS.
 
 
 ## Projects
 
 1. **Coomrade**  
-    The platform where any user can express their thoughts by writing blogs. Currently some features are under construction. Once it’ll be fully functional users will have insights of blogs and user behaviour.  
+    The platform where any user can express their thoughts by writing blogs. Currently some features are under construction. Once it’ll be fully functional users will have insights of blogs and user behaviour.     
     [See Work](https://coomrade.com)
 
 2. **Adverse Drug Helpline**  
