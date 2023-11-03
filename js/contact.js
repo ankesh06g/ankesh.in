@@ -1,4 +1,4 @@
-$(document).ready(function(){
+    $(document).ready(function(){
     
     (function($) {
         "use strict";
@@ -8,6 +8,15 @@ $(document).ready(function(){
         return this.optional(element) || /^\bcat\b$/.test(value)
     }, "type the correct answer -_-");
 
+    window.addEventListener("load", function() {
+        const form = document.getElementById('contactForm');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          $("#submit-button").css("display", "none");
+          $("#submit-loader").css("display", "block");
+        });
+      });
+    
     // validate contactForm form
     $(function() {
         $('#contactForm').validate({
@@ -54,30 +63,34 @@ $(document).ready(function(){
                     minlength: "thats all? really?"
                 }
             },
-            // submitHandler: function(form) {
-            //     $(form).ajaxSubmit({
-            //         type:"POST",
-            //         data: $(form).serialize(),
-            //         url:"contact_process.php",
-            //         success: function() {
-            //             $('#contactForm :input').attr('disabled', 'disabled');
-            //             $('#contactForm').fadeTo( "slow", 1, function() {
-            //                 $(this).find(':input').attr('disabled', 'disabled');
-            //                 $(this).find('label').css('cursor','default');
-            //                 $('#success').fadeIn()
-            //                 $('.modal').modal('hide');
-		    //             	$('#success').modal('show');
-            //             })
-            //         },
-            //         error: function() {
-            //             $('#contactForm').fadeTo( "slow", 1, function() {
-            //                 $('#error').fadeIn()
-            //                 $('.modal').modal('hide');
-		    //             	$('#error').modal('show');
-            //             })
-            //         }
-            //     })
-            // }
+            submitHandler: function(form) {
+                $(form).ajaxSubmit({
+                    type:"POST",
+                    data: $(form).serialize(),
+                    url:"https://script.google.com/macros/s/AKfycbwFC_SAGN2nMdkJv9VqbZC0BlNbYlw2yiNrw5-oDB4-GCqBShQMPWrBmNBjsHUgmZ7nVA/exec",
+                    success: function() {
+                        $("#submit-loader").css("display", "none");
+                        $("#submit-success").css("display", "block");
+                        $('#contactForm :input').attr('disabled', 'disabled');
+                        $('#contactForm').fadeTo( "slow", 1, function() {
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor','default');
+                            $('#success').fadeIn()
+                            $('.modal').modal('hide');
+		                	$('#success').modal('show');
+                        })
+                    },
+                    error: function() {
+                        $("#submit-loader").css("display", "none");
+                        $("#submit-error").css("display", "block");
+                        $('#contactForm').fadeTo( "slow", 1, function() {
+                            $('#error').fadeIn()
+                            $('.modal').modal('hide');
+		                	$('#error').modal('show');
+                        })
+                    }
+                })
+            }
         })
     })
         

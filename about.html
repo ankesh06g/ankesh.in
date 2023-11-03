@@ -335,19 +335,27 @@
                         <h4>Newsletter</h4>
                         <p>Stay updated with our latest Courses, Seminars, Workshops, etc.
                         </p>
-                        <form action="https://formspree.io/f/mknlydbe" method="POST">
-                            <div class="form-group">
-                                <div class="input-group mb-3">
-                                    <input class="form-control" name="email" type="email" placeholder='Enter email address'
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Enter email address'">
-                                    <textarea  name="message" id="message" cols="30" rows="9" value="Newsletter" hidden></textarea>
-                                    <div class="input-group-append">
-                                        <button class="btn btn_1" type="submit"><i class="ti-angle-right"></i></button>
-                                    </div>
-                                </div>
+                        <form id="newsletter-form">
+                        <div class="form-group">
+                          <div class="input-group mb-3">
+                            <input type="text" name="Email" id="newsletter-email" class="form-control" placeholder='Enter email address'
+                                onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Enter email address'" required>
+                            <div class="input-group-append">
+                                <button class="btn btn_1" id="newsletter-submit" type="submit"><i class="ti-angle-right"></i></button>
+                                <div class="spinner-border text-secondary" id="newsletter-loader" role="status" style="display: none;">
+                                  <span class="sr-only">Loading...</span>
+                                </div> 
                             </div>
-                        </form>
+                        </div>
+                      </form>
+                        <div class="alert alert-success" role="alert" id="newsletter-success" style="display: none;">
+                          We recieved your responce!
+                        </div>
+                        <div class="alert alert-danger" role="alert" id="newsletter-error" style="display: none;">
+                          There is an some error. Please refresh the page and try again.
+                        </div>
+                      </div>
                         <div class="social_icon">
                             <a href="#"> <i class="ti-facebook"></i> </a>
                             <a href="#"> <i class="ti-twitter-alt"></i> </a>

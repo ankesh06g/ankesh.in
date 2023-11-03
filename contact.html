@@ -121,21 +121,35 @@
           <h2 class="contact-title">Get in Touch</h2>
         </div>
         <div class="col-lg-8">
-          <form class="form-contact contact_form" action="https://formspree.io/f/mknlydbe" method="POST" id="contactForm">
+          <form class="form-contact contact_form" method="POST" id="contactForm">
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
-                    <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder = 'Enter email address'>
+                  <input class="form-control" name="Name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder = 'Enter your name'>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-group">
-                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder = 'Enter Message'></textarea>
+                    <input class="form-control" name="Email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder = 'Enter email address'>
                 </div>
               </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea class="form-control w-100" name="Message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder = 'Enter Message'></textarea>
+              </div>
+              </div>
             </div>
-            <div class="form-group mt-3">
+            <div class="form-group mt-3" id="submit-button">
               <button type="submit" class="button button-contactForm btn_1">Send Message</button>
+            </div>
+            <div class="spinner-border text-secondary" id="submit-loader" role="status" style="display: none;">
+              <span class="sr-only">Loading...</span>
+            </div>  
+            <div class="alert alert-success" role="alert" id="submit-success" style="display: none;">
+              Your form is submitted successfully! We'll contact you shortly!
+            </div>
+            <div class="alert alert-danger" role="alert" id="submit-error" style="display: none;">
+              There is an some error. Please refresh the page and try again.
             </div>
           </form>
         </div>
@@ -184,18 +198,27 @@
                     <h4>Newsletter</h4>
                     <p>Stay updated with our latest Courses, Seminars, Workshops, etc.
                     </p>
-                    <form action="#">
+                      <form id="newsletter-form">
                         <div class="form-group">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder='Enter email address'
-                                    onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Enter email address'">
-                                <div class="input-group-append">
-                                    <button class="btn btn_1" type="button"><i class="ti-angle-right"></i></button>
-                                </div>
+                          <div class="input-group mb-3">
+                            <input type="text" name="Email" id="newsletter-email" class="form-control" placeholder='Enter email address'
+                                onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Enter email address'" required>
+                            <div class="input-group-append">
+                                <button class="btn btn_1" id="newsletter-submit" type="submit"><i class="ti-angle-right"></i></button>
+                                <div class="spinner-border text-secondary" id="newsletter-loader" role="status" style="display: none;">
+                                  <span class="sr-only">Loading...</span>
+                                </div> 
                             </div>
                         </div>
-                    </form>
+                      </form>
+                        <div class="alert alert-success" role="alert" id="newsletter-success" style="display: none;">
+                          We recieved your responce!
+                        </div>
+                        <div class="alert alert-danger" role="alert" id="newsletter-error" style="display: none;">
+                          There is an some error. Please refresh the page and try again.
+                        </div>
+                      </div>
                     <div class="social_icon">
                         <a href="#"> <i class="ti-facebook"></i> </a>
                         <a href="#"> <i class="ti-twitter-alt"></i> </a>

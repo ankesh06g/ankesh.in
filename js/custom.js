@@ -110,6 +110,29 @@
 //     });
     
 //   });
+
+$("#newsletter-submit").click(function(){
+  const newsletter_form = document.getElementById('newsletter-form');
+  newsletter_form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    $("#newsletter-submit").css("display", "none");
+    $("#newsletter-loader").css("display", "block");
+    $.ajax({
+      type: "POST",
+      data: $(newsletter_form).serialize(),
+      url: "https://script.google.com/macros/s/AKfycbwFC_SAGN2nMdkJv9VqbZC0BlNbYlw2yiNrw5-oDB4-GCqBShQMPWrBmNBjsHUgmZ7nVA/exec",
+      success: function (result, status, xhr) {
+        $("#newsletter-loader").css("display", "none");
+        $("#newsletter-success").css("display", "block");
+      },
+      error: function (xhr, status, error) {
+        $("#newsletter-loader").css("display", "none");
+        $("#newsletter-error").css("display", "block");
+      }
+    });
+  });
+    
+});
  
 
 $('.counter').counterUp({
